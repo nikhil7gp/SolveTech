@@ -1,0 +1,230 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f8fafc;
+  margin: 0;
+  color: #1a2236;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.header-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0 1rem 0;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #181aff;
+  letter-spacing: 1px;
+}
+.logo span {
+  color: #1a2236;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+nav a {
+  color: #1a2236;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+nav a:hover {
+  color: #181aff;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-block: 2rem;
+  gap: 2rem;
+}
+
+.hero-img {
+  width: 320px;
+  max-width: 45vw;
+  border-radius: 16px;
+}
+
+.hero h1 {
+  margin-top: 0;
+  font-size: 2.7rem;
+  color: #181aff;
+  font-weight: 800;
+}
+.hero p {
+  font-size: 1.25rem;
+  color: #2f365f;
+  margin-bottom: 1.5rem;
+}
+.cta-btn {
+  background: #181aff;
+  color: #fff;
+  padding: .8rem 2rem;
+  font-size: 1rem;
+  border-radius: 100px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 4px 24px rgba(24,26,255, 0.07);
+  transition: background 0.2s;
+}
+.cta-btn:hover {
+  background: #152fc9;
+}
+
+h2 {
+  margin-top: 3rem;
+  font-size: 2rem;
+  color: #181aff;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  margin-block: 2rem;
+}
+.service-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 12px rgba(40,50,100, 0.07);
+  transition: transform 0.12s;
+}
+.service-card:hover {
+  transform: translateY(-7px) scale(1.03);
+}
+.service-card h3 {
+  margin: 0 0 0.5rem 0;
+  color: #1a2236;
+}
+.service-card p {
+  margin: 0;
+  color: #364a6a;
+  font-size: 1.05rem;
+}
+
+.process-row {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+.process-step {
+  flex: 1 1 200px;
+  background: #eaeaff;
+  border-radius: 12px;
+  text-align: center;
+  padding: 1.2rem 1rem;
+  margin: .7rem 0;
+}
+.process-step span {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  background: #181aff;
+  width: 38px; height: 38px;
+  line-height: 38px;
+  border-radius: 50%;
+  margin-bottom: .5rem;
+}
+
+.tech-logos {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+.tech-logos img {
+  height: 50px;
+  max-width: 110px;
+  opacity: 0.85;
+  background: #fff;
+  border-radius: 9px;
+  padding: 5px 14px;
+  box-shadow: 0 2px 10px rgba(120,150,255, 0.06);
+}
+
+#contact {
+  margin: 4rem 0 2rem 0;
+  background: #eaeaff;
+  border-radius: 18px;
+  padding: 2rem 1.2rem;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 440px;
+  margin: auto;
+}
+.contact-form input, .contact-form textarea {
+  font-size: 1rem;
+  padding: .8rem;
+  border-radius: 8px;
+  border: 1px solid #bac7e6;
+  outline: none;
+}
+.contact-form button {
+  background: #181aff;
+  color: #fff;
+  border: none;
+  border-radius: 100px;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.contact-form button:hover {
+  background: #364a6a;
+}
+.contact-msg {
+  text-align: center;
+  margin: 1.5rem 0 0 0;
+  color: #1a2236;
+  font-size: 1.05rem;
+}
+
+footer {
+  margin: 3rem 0 1rem 0;
+  text-align: center;
+  color: #8696b6;
+  font-size: .95rem;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .header-bar {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  .tech-logos {
+    gap: 1rem;
+    justify-content: center;
+  }
+  .process-row {
+    flex-direction: column;
+    gap: 1.3rem;
+  }
+}
